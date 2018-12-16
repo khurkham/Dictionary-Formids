@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/LanguageDirectionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/LanguagePairCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/languageFrom"
+            style="?android:attr/dropDownItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Englisch" />
+
+        <TextView
+            android:id="@+id/directionIndicator"
+            style="?android:attr/dropDownItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="->" />
+
+        <TextView
+            android:id="@+id/languageTo"
+            style="?android:attr/dropDownItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Chinesisch" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/LoadDictionary"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView01" >
+    </TextView>
+
+</LinearLayout>

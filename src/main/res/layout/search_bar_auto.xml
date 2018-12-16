@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/InputLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/TranslationInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_enter_word"
+        android:imeOptions="actionDone"
+        android:paddingRight="40dip"
+        android:selectAllOnFocus="true" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBarSearchAsYouType"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="right|center_vertical"
+        android:focusable="false"
+        android:indeterminate="true"
+        android:maxHeight="16dip"
+        android:maxWidth="16dip"
+        android:minHeight="16dip"
+        android:minWidth="16dip"
+        android:pivotX="50%" android:pivotY="50%"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/ClearInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right|center_vertical"
+        android:maxHeight="16dp"
+        android:maxWidth="16dp"
+        android:minHeight="16dp"
+        android:minWidth="16dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+</FrameLayout>

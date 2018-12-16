@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="app_name_debug">DictionaryForMIDs~</string>
+    <string-array name="font_size_values">
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+		<item>16</item>
+		<item>17</item>
+		<item>18</item>
+		<item>19</item>
+		<item>20</item>
+		<item>21</item>
+		<item>22</item>
+		<item>23</item>
+		<item>24</item>
+		<item>25</item>
+		<item>26</item>
+	</string-array>
+	<string-array name="search_mode_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="theme_values">
+	    <item>0</item>
+	    <item>style/DarkThemeSelector</item>
+	    <item>style/LightThemeSelector</item>
+	</string-array>
+	<string name="tag_tab_recent">tab_recent</string>
+	<string name="tag_tab_file">tab_file</string>
+	<string name="tag_tab_included">tab_included</string>
+	<string name="tag_tab_download">tab_download</string>
+	<string name="attribute_market_search">market://search?q=pname:%1$s</string>
+	<string name="attribute_root_path">/</string>
+	<string name="attribute_installation_directory">%1$s/DictionaryForMIDs/dict/</string>
+	<string name="attribute_jar_directory">%1$s/DictionaryForMIDs/jar/</string>
+	<string name="attribute_zip_directory">%1$s/DictionaryForMIDs/zip/</string>
+	<string name="format_version">%1$s (%2$d %3$s)</string>
+	<string name="title_format_translation_direction_separator">\t</string>
+	<string-array name="language_codes">
+		<item>@string/title_default_language_code</item>
+        <item>العربية</item>
+        <item>Български</item>
+		<item>Dansk</item>
+        <item>Deutsch</item>
+        <item>Ελληνικά</item>
+		<item>English</item>
+		<item>Español</item>
+		<item>Esperanto</item>
+        <item>Français</item>
+		<item>Magyar</item>
+		<item>Italiano</item>
+		<item>日本語</item>
+        <item>Bahasa Melayu</item>
+        <item>Nederlands</item>
+        <item>Português-Brasil</item>
+        <item>Português Europeu</item>
+        <item>Русский</item>
+        <item>српски</item>
+        <item>Slovensky</item>
+		<item>தமிழ்</item>
+        <item>ภาษาไทย</item>
+		<item>Türkçe</item>
+		<item>اردو</item>
+        <item>Tiếng Việt</item>
+		<item>简体中文</item>
+		<item>繁體中文</item>
+	</string-array>
+	<string-array name="language_code_values">
+		<item></item>
+        <item>ar-SA</item>
+        <item>bg-BG</item>
+		<item>da-DK</item>
+        <item>de-DE</item>
+        <item>el-GR</item>
+		<item>en</item>
+		<item>es-ES</item>
+		<item>eo</item>
+        <item>fr-FR</item>
+		<item>hu-HU</item>
+		<item>it</item>
+		<item>ja</item>
+        <item>ms-MY</item>
+        <item>nl-NL</item>
+        <item>pt-BR</item>
+        <item>pt-PT</item>
+        <item>ru-RU</item>
+        <item>sr-SP</item>
+        <item>sk-SK</item>
+		<item>ta-IN</item>
+        <item>th-TH</item>
+		<item>tr</item>
+		<item>ur-PK</item>
+        <item>vi-VN</item>
+		<item>zh-CN</item>
+		<item>zh-TW</item>
+	</string-array>
+	<!-- Array including two corresponding entries for each entry -->
+	<!-- <item>LANGUAGE_NAME</item><item>@string/languageNAME</item> -->
+	<!-- Used for translating languages -->
+	<!-- e.g. replace LANGUAGE_NAME with @string/languageNAME -->
+	<string-array name="language_localization">
+		<item>English</item>
+		<item>@string/language_english</item>
+		<item>Esperanto</item>
+		<item>@string/language_esperanto</item>
+		<item>Vietnamese</item>
+		<item>@string/language_vietnamese</item>
+		<item>Chinese</item>
+		<item>@string/language_chinese</item>
+		<item>Japanese</item>
+		<item>@string/language_japanese</item>
+		<item>Thai</item>
+		<item>@string/language_thai</item>
+		<item>Hindi</item>
+		<item>@string/language_hindi</item>
+		<item>Indonesian</item>
+		<item>@string/language_indonesian</item>
+		<item>French</item>
+		<item>@string/language_french</item>
+		<item>Spanish</item>
+		<item>@string/language_spanish</item>
+		<item>German</item>
+		<item>@string/language_german</item>
+		<item>Italian</item>
+		<item>@string/language_italian</item>
+		<item>Latin</item>
+		<item>@string/language_latin</item>
+		<item>Russian</item>
+		<item>@string/language_russian</item>
+		<item>Arabic</item>
+		<item>@string/language_arabic</item>
+		<item>Czech</item>
+		<item>@string/language_czech</item>
+		<item>Slovak</item>
+		<item>@string/language_slovak</item>
+		<item>Bulgarian</item>
+		<item>@string/language_bulgarian</item>
+		<item>Catalan</item>
+		<item>@string/language_catalan</item>
+		<item>Persian</item>
+		<item>@string/language_persian</item>
+		<item>Finnish</item>
+		<item>@string/language_finnish</item>
+		<item>Greek</item>
+		<item>@string/language_greek</item>
+		<item>Hebrew</item>
+		<item>@string/language_hebrew</item>
+		<item>Croatian</item>
+		<item>@string/language_croatian</item>
+		<item>Hungarian</item>
+		<item>@string/language_hungarian</item>
+		<item>Lithuanian</item>
+		<item>@string/language_lithuanian</item>
+		<item>Dutch</item>
+		<item>@string/language_dutch</item>
+		<item>Polish</item>
+		<item>@string/language_polish</item>
+		<item>Portuguese</item>
+		<item>@string/language_portuguese</item>
+		<item>Swedish</item>
+		<item>@string/language_swedish</item>
+		<item>Norwegian</item>
+		<item>@string/language_norwegian</item>
+		<item>Turkish</item>
+		<item>@string/language_turkish</item>
+		<item>Tagalog</item>
+		<item>@string/language_tagalog</item>
+        <item>Tamil</item>
+        <item>@string/language_tamil</item>
+        <item>Turkmen</item>
+        <item>@string/language_turkmen</item>
+        <item>Danish</item>
+        <item>@string/language_danish</item>
+        <item>Korean</item>
+        <item>@string/language_korean</item>
+        <item>Swahili</item>
+        <item>@string/language_swahili</item>
+        <item>Macedonian</item>
+        <item>@string/language_macedonian</item>
+        <item>Occitan</item>
+        <item>@string/language_occitan</item>
+        <item>Ukrainian</item>
+        <item>@string/language_ukrainian</item>
+        <item>Sanskrit</item>
+        <item>@string/language_sanskrit</item>
+        <item>Belarusian</item>
+        <item>@string/language_belarusian</item>
+        <item>Afrikaans</item>
+        <item>@string/language_afrikaans</item>
+        <item>Scottish Gaelic</item>
+        <item>@string/language_scottish_gaelic</item>
+        <item>Icelandic</item>
+        <item>@string/language_icelandic</item>
+        <item>Welsh</item>
+        <item>@string/language_welsh</item>
+        <item>Irish</item>
+        <item>@string/language_irish</item>
+        <item>Asturian</item>
+        <item>@string/language_asturian</item>
+        <item>Definition</item>
+        <item>@string/language_definition</item>
+	</string-array>
+</resources>

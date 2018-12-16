@@ -1,0 +1,96 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.+'
+    compile fileTree(dir: 'libs', include: '*.jar')
+    
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2'
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '27.0.3'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    defaultConfig {
+        applicationId 'de.kugihan.dictionaryformids.hmi_android'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+            // Use properties from file gradle.properties
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+
+        release {
+            debuggable false
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+        }
+    }
+
+}
+
+task readPasswordFromInput << {
+    def console = System.console()
+
+    if (android.signingConfigs.release.storePassword == "") {
+        ext.storePassword = console.readPassword('\n> Enter Store password: ')
+    }
+    if (android.signingConfigs.release.keyPassword == "") {
+        ext.keyPassword = console.readPassword(msg)
+    }
+
+    console.println()
+}
+
+//task createReleaseZip(type: Zip, dependsOn: "assembleRelease") {
+//    def versionName = getVersionName()
+//    def releaseFile = file("${buildDir}/outputs/apk/DictionaryForMIDs_Android-release.apk");
+//    assert releaseFile.exists()
+//    from(releaseFile.getParent()) {
+//        include releaseFile.getName()
+//        rename releaseFile.getName(), 'DictionaryForMIDs.apk'
+//    }
+//    assert file("./COPYING").exists()
+//    assert file("./README").exists()
+//    from("./") {
+//        include 'COPYING'
+//        include 'README'
+//        expand versionName: versionName
+//    }
+//    archiveName project.name + '_' + versionName + '.' + extension
+//}
+
+import javax.xml.parsers.DocumentBuilderFactory
+def getVersionName() {
+    def builderFactory = DocumentBuilderFactory.newInstance()
+    builderFactory.setNamespaceAware(true)
+    def manifestXml = builderFactory.newDocumentBuilder().parse(project.file(android.sourceSets.main.manifest.srcFile)).documentElement
+    def versionName = manifestXml.getAttributeNS("http://schemas.android.com/apk/res/android", "versionName")
+    return versionName
+}
